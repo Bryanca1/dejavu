@@ -1,0 +1,213 @@
+html {
+    color: #222; /* Color del texto */
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc; /* Color de selección en Firefox */
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc; /* Color de selección en otros navegadores */
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc; /* Color del borde superior */
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc; /* Fondo de la advertencia */
+    color: #000; /* Color del texto de la advertencia */
+    padding: 0.2em 0;
+}
+
+/* ===== Estilos Initializr ======================================================= */
+/* Autor: Jonathan Verrecchia - verekia.com/initializr/responsive-template */
+
+cuerpo {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial; /* Fuente del cuerpo */
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* =================== TODOS: Tema verde y azul ==================== */
+.header-container {
+    border-bottom: 20px solid #28a745; /* Verde */
+}
+
+.footer-container, .main aside {
+    border-top: 20px solid #007bff; /* Azul */
+}
+
+.header-container, .footer-container, .main aside {
+    background: #17a2b8; /* Azul claro */
+}
+
+.title {
+    color: white; /* Color del título */
+}
+
+/* ============== MÓVIL: Menú ============== */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white; /* Color del texto del menú */
+    background: #28a745; /* Verde */
+}
+
+nav a:hover, nav a:visited {
+    color: white; /* Color del texto al pasar el ratón o visitado */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* ============== MÓVIL: Principal ============== */
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em; /* Tamaño del encabezado principal */
+}
+
+.main aside {
+    color: white; /* Color del texto en el aside */
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white; /* Color del texto en el pie de página */
+    padding: 20px 0;
+}
+
+/* =============== TODOS: Correcciones de IE =============== */
+.ie7 .title {
+    padding-top: 20px; 
+}
+
+/* =============================================================================== Estilos personalizados del autor ===================================================================================== */
+
+/* =========================================================================== Consultas de medios ============================================================================ */
+
+@media only screen and (min-width: 480px) {
+    
+/* ===================== INTERMEDIO: Menú ==================== */
+
+nav a {
+        float:left;
+        width:27%;
+        margin:0 1.7%;
+        padding:25px 2%;
+        margin-bottom:0;
+}
+nav li:first-child a { margin-left :0;}
+nav li:last-child a { margin-right :0;}
+    
+/* ======================== INTERMEDIO: Correcciones de IE ======================== */
+
+nav ul li { display:inline; }
+.oldie nav a { margin :0 .7%; }
+}
+@media only screen and (min-width :768px) {
+/* ==================== ANCHO : Efectos CSS3 ==================== */
+
+.header-container, .main aside { -webkit-box-shadow :0 5px 10px #aaa; -moz-box-shadow :0 5px 10px #aaa; box-shadow :0 5px 10px #aaa; }
+
+/* ============ ANCHO : Menú ============ */
+
+.title { float:left;}
+nav { float:right;width :38%; }
+
+/* ============ ANCHO : Principal ============ */
+
+.main article { float:left;width :57%;}
+.main aside { float:right;width :28%;}
+}
+@media only screen and (min-width :1140px) {
+/* =============== Ancho máximo =============== */
+
+.wrapper { width :1026px;margin :0 auto;} 
+}
+
+/* =========================================================================== Clases auxiliares ================================================================================ */
+
+.hidden { display:none !important; opacity:hidden;}
+.visuallyhidden { border :0; clip :rect(0,0,0,0); height :1px;margin :-1px; overflow:hidden;padding :0; position:absolute;width :1px;}
+.visuallyhidden.focusable:hover,.visuallyhidden.focusable:focussed { clip:auto;height:auto;margin :0; overflow :visible; position :static;width:auto;}
+.invisible { visibility:hidden;}
+.clearfix::before,.clearfix::after { content:" "; display:block;}
+.clearfix::after { clear:both;}
+.clearfix { zoom :1;} 
+
+/* ============================================================================== Estilos de impresión ================================================================================= */
+
+@media print {
+
+*, *::before,*::after{ background-color :transparent !important;color:#000 !important;text-shadow:none !important;}
+a,a:hover{ text-decoration :underline;}
+a[href]:after{ content:" (" attr(href) ")";}
+abbr[title]:after{ content:" (" attr(title) ")";}
+a[href^="#"]:after,a[href^="javascript:void(0)"]:after{ content:"";}
+pre,blockquote{ border :1px solid #999; page-break-inside :avoid;}
+thead { display :table-header-group;}
+tr,img{ page-break-inside :avoid;}
+img{ max-width :100% !important;}
+p,h2,h3{ orphans :3; widows :3;}
+h2,h3{ page-break-after :avoid;} 
+}
+
+.embed-contrainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-contrainer iframe,
+.embed-contrainer object,
+.embed-contrainer embed {
+    posixion: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
